@@ -29,6 +29,7 @@ import qualified Data.ByteString as B
 import qualified Data.Text as T
 import qualified Data.Map as Map
 import qualified Data.Set as Set
+import           Data.Functor          (void)
 import Numeric (showHex)
 import GHC.Generics
 import           Cardano.Api.Shelley   (PlutusScript (..), fromPlutusData)
@@ -38,11 +39,7 @@ import qualified PlutusTx
 import qualified Ledger
 
 import Utils
-
--- Uncomment the two lines below to compile and write your validator to the a .plutus file in
--- the plutus directory.
--- main :: IO (Either (FileError ()) ())
--- main = writeValidator "plutus/script.plutus" $ validator
+import PlutusExample
 
 -- A basic main function that prints "Compiles :)" to check if you code
 -- compiles. In addition you could convert and generate datums/redeemers to
@@ -50,6 +47,7 @@ import Utils
 main :: IO ()
 main = do
     print "Compiles :)"
---    writeJSON "testnet/datum.json" testDatum
---    writeJSON "testnet/redeemer.json" testRedeemer
+    void $ writeValidator "plutus/script.plutus" $ validator
+--  writeJSON "testnet/datum.json" testDatum
+--  writeJSON "testnet/redeemer.json" testRedeemer
 

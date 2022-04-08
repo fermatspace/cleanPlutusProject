@@ -10,13 +10,18 @@ In the `cabal.project` file there is a reference made to the `/Input-output-hk/p
 ### Folder structure
 ```
 ├── app
-│   └── Main.hs                         (The main program that is run when you `cabal run`
+│   └── Main.hs                         (The main program that is run when you `cabal run`)
 ├── cabal.project                       (Contains references to dependancies)
 ├── cleanPlutusProject.cabal            (Contains all the basic information about your project)
 ├── LICENSE
 ├── plutus                              (A directory to store files created by the `app/Main.hs` program like compiled plutus core)
+│   └── script.plutus                   (The artifact of the example plutus validator in the `scr/PlutusExample.hs` file
 ├── src                                 (The directory to store all your Haskell modules and Plutus validator scripts)
-│   └── Utils.hs                        (some basic tool that help compile to plutus core and encode datums and redeemers)
+|   ├── PlutusExample.hs                (A template plutus example)
+|   └── Utils.hs                        (some basic tool that help compile to plutus core and encode datums and redeemers|
 └── testnet                             (A folder where you can test your scripts on testnet and store/construct transactions)
     └── keys
 ```
+
+### Feature request?
+Want something implemented? Feel free to make create an issue of a pull request.

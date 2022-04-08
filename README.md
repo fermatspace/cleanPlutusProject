@@ -21,6 +21,7 @@ In the `cabal.project` file there is a reference made to the `/Input-output-hk/p
 |   └── Utils.hs                        (some basic tool that help compile to plutus core and encode datums and redeemers|
 └── testnet                             (A folder where you can test your scripts on testnet and store/construct transactions)
     └── keys
+         └── genKeys.sh                 (A little script to generate keys to use on testnet)
 ```
 
 ### Feature request?

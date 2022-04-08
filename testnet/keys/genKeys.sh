@@ -1,7 +1,8 @@
 #! /usr/bin/env bash
 shopt -s expand_aliases
 
-alias cardano-cli="~/git/cardano-node/cardano-cli-build/bin/cardano-cli"
+#if you dont have the cardano-cli in you binaries path but somewhere else you can uncomment the line below
+#alias cardano-cli="~/git/cardano-node/cardano-cli-build/bin/cardano-cli"
 
 cardano-cli address key-gen \
     --verification-key-file payment.vkey \

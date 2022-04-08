@@ -39,9 +39,14 @@ import qualified Ledger
 
 import Utils
 
---main :: IO (Either (FileError ()) ())
---main = writeValidator "plutus/script.plutus" $ validator
+-- Uncomment the two lines below to compile and write your validator to the a .plutus file in
+-- the plutus directory.
+-- main :: IO (Either (FileError ()) ())
+-- main = writeValidator "plutus/script.plutus" $ validator
 
+-- A basic main function that prints "Compiles :)" to check if you code
+-- compiles. In addition you could convert and generate datums/redeemers to
+-- json to use with the cardano-cli with the function writeJSON.
 main :: IO ()
 main = do
     print "Compiles :)"

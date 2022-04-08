@@ -26,3 +26,8 @@ In the `cabal.project` file there is a reference made to the `/Input-output-hk/p
 
 ### Feature request?
 Want something implemented? Feel free to make create an issue of a pull request.
+
+### TO DO
+1) Add an offchain and test example module.
+2) Clean up imports and pragma's
+3) Update dependancies in cabal.project

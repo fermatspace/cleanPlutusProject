@@ -28,6 +28,8 @@ In the `cabal.project` file there is a reference made to the `/Input-output-hk/p
 Want something implemented? Feel free to make create an issue of a pull request.
 
 ### TO DO
-1) Add an offchain and test example module.
-2) Clean up imports and pragma's
-3) Update dependancies in cabal.project
+1) Add an offchain code 
+2) Add testing example module.
+3) Add exucutable for calculating mem and cpu units
+4) Clean up imports and pragma's
+5) Update dependancies in cabal.project

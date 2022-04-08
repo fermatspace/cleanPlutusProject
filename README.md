@@ -5,7 +5,7 @@ This is a clean cabal structure for plutus development. You can clone this to se
 Git clone the repo and run the `setup.sh` bash script from a directory where you want to configure a new project.
 
 ### How to use
-In the `cabal.project` file there is a reference made to the `/Input-output-hk/plutus-apps` github repository. With this reference there is also a version specified using a `tag`. Clone the plutus-app repository and `git checkout "INSERT referenced TAG HERE"`. Now you can open a `nix-shell` in that repository, this will preload all important dependancies that you will need in the development of your plutus project (the first time takes 10 minutes). If you now change directory to your just initialized clean plutus project folder you can compile the `app/Main.hs` file by running `cabal run`.
+In the `cabal.project` file there is a reference made to the `/Input-output-hk/plutus-apps` github repository. With this reference there is also a version specified using a `tag` (the setup script will also promt this tag). Clone the plutus-app repository and `git checkout "INSERT referenced TAG HERE"`. Now you can open a `nix-shell` in that repository, this will preload all important dependancies that you will need in the development of your plutus project (the first time takes 10 minutes). If you now change directory to your just initialized clean plutus project folder you can compile the `app/Main.hs` file by running `cabal build` and you can build and run it by using `cabal run`.
 
 ### Folder structure
 ```

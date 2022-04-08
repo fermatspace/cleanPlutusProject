@@ -41,4 +41,5 @@ mv $new_dir/cleanPlutusProject.cabal $new_dir/$project_name.cabal
 # Giving the correct tag to use in the plutus-app directory for a nix-shell for this repo.
 plutus_app_line=$(awk '/plutus-app/{ print NR; exit }' $new_dir/cabal.project)
 plutus_app_line=$(($plutus_app_line + 1))
+echo "Use this git tag for you plutus-app git repository to build te dependacies for your "$project_name" project."
 sed "${plutus_app_line}q;d" $new_dir/cabal.project | awk '{print $1}'
